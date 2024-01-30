@@ -70,6 +70,8 @@ class TryCloudflare:
             "tunnel",
             "--url",
             f"http://127.0.0.1:{port}",
+            "--protocol",
+            "http2"
         ]
 
         if metrics_port is not None:
